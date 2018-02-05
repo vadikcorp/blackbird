@@ -245,15 +245,20 @@ body{
 
 	.row{
 		padding:0px 50px 100px 50px;
+		.col-md-8{
+			margin:0 auto;
+		}
 		.box{
+			width: 100%;
 			padding:0px;
-			box-shadow:1px 1px 15px #ddd;
 			margin:5% 0px;
-			transition:all .5s ease-in-out;
+			box-shadow:0px 0px 1px rgba(0,0,0,0.9);
+			transition:all 0.2s ease-in-out;
 			&:hover{
 				cursor:pointer;
-				box-shadow:3px 3px 10px rgba(0,0,0,0.9);
+				box-shadow:5px 5px 20px rgba(0,0,0,0.9);
 			}
+
 			.inner-box{
 				padding:0px 20px;
 			}
@@ -275,6 +280,7 @@ body{
 				background-color:#e3e3e3;
 			}
 			h3{
+				padding:0px 20px;
 				margin-top:40px;
 				font-size:200%;
 				text-transform:uppercase;
@@ -298,6 +304,7 @@ body{
 				margin:0px 0;
 				a{
 					padding:15px 20px;
+
 					text-transform:uppercase;
 					letter-spacing:.1em;
 					margin:30px 0px 50px 0px;
@@ -432,11 +439,31 @@ body{
 		}
 	}
 }
+@media screen and (max-width: 1090px){
+	#price{
+		.box-2{
+			.buttons{
+				a{
+					font-size:65%;
+					padding:0px;
+				}
+			}
+		}
+	}
+}
 
-@media screen and (max-width: 753px){
+@media screen and (max-width: 767px){
 	#portfolio{
 		.box{
 			height: 400px;
+		}
+	}
+	#count{
+		.box{
+			border-bottom:3px solid #e3e3e3;
+			&:last-child{
+				border:0;
+			}
 		}
 	}
 }
@@ -449,16 +476,39 @@ body{
 				padding:0px 20px;
 			}
 			.buttons{
-				a{
-					margin-right:0px;
+				&:last-child{
+					margin-left:5px;
 				}
 			}
 		}
 	}
 	#ability{
-		.box{
-			margin:0px;
-			padding:0px;
+		.container{
+			padding:50px 50px;
+			
+			.col-sm-12{
+				// width: 80%;
+				margin:0 auto;
+			}
+
+			.box{
+				padding:30px 15px;
+				text-align:center;
+				margin-right:0px;
+				h3{
+					text-transform:uppercase;
+					margin-bottom:10px;
+					font-size:140%;
+				}
+				.fa{
+					font-size:60px;
+					margin-bottom:0px;
+					padding-bottom:10px;
+				}
+				p{
+					font-size:90%;
+				}
+			}
 		}
 	}
 	#whatido{
@@ -476,14 +526,7 @@ body{
 			}
 		}
 	}
-	#count{
-		.box{
-			border-bottom:3px solid #e3e3e3;
-			&:last-child{
-				border:0;
-			}
-		}
-	}
+	
 	#portfolio{
 		.box{
 			height:300px;
@@ -530,14 +573,108 @@ body{
 		}
 	}
 	#price{
-		.box-2{
-			.buttons{
-				a{
-					font-size:65%;
-					padding:0px;
-				}
+		.heading{
+			padding:50px 0px;
+			h1{
+				text-align:center;
+				text-transform:uppercase;
+				font-size:150%;
+			}
+			.line{
+				margin:0 auto;
+				height:3px;
+				width:50px;
+				background-color:#000;
+				display:block;
 			}
 		}
+
+		.row{
+			padding:0px 20px 100px 20px;
+			.col-md-8{
+				margin:0 auto;
+			}
+			.box{
+				width: 100%;
+				padding:0px;
+				box-shadow:1px 1px 15px #ddd;
+				margin:5% 0px;
+				transition:all .5s ease-in-out;
+				&:hover{
+					cursor:pointer;
+					box-shadow:3px 3px 10px rgba(0,0,0,0.9);
+				}
+				.inner-box{
+					padding:0px 10px;
+				}
+				.ico{
+					background-color:#e3e3e3;
+					.fa{
+						padding:35px 0;
+						font-size:50px;
+					}
+				}
+				.pricing{
+					padding-bottom:10px;
+				}
+				.line{
+					margin:0 auto;
+					display:block;
+					height: 2px;
+					width: 100px;
+					background-color:#e3e3e3;
+				}
+				h3{
+					padding:0px 20px;
+					margin-top:20px;
+					font-size:150%;
+					text-transform:uppercase;
+				}
+				h5{
+					font-size:120%;
+					font-style:italic;
+				}
+				ul{
+					list-style-type:none;
+					margin-top:10px;
+					padding:0;
+					display:flex;
+					flex-direction:column;
+					li{
+						line-height:1.8em;
+						font-size:100%;
+					}
+				}
+				.buttons{
+					margin:0px 0;
+					a{
+						padding:5px 10px;
+						font-size:80%;
+						text-transform:uppercase;
+						letter-spacing:.1em;
+						margin:10px 0px 30px 0px;
+					}
+					.btn-dark{
+							background-color:#000;
+							color:#f4f4f4;
+							&:hover{
+								background-color:#f4f4f4;
+								border:1px solid #000;
+								color:#000;
+							}
+					}
+				}
+			
+			}
+			.box-2{
+				.buttons{
+					a{
+						font-size:60%;
+					}
+				}
+			}	
+		}
+		
 	}
 	#contact{
 		.icon{
@@ -562,6 +699,21 @@ body{
 			}
 		}
 		
+	}
+
+	#footer{
+		padding:20px 0px;
+		.info{
+			width: 200px;
+			margin:0px auto;
+			.fa{
+				font-size:40px;
+				margin:0px 10px 15px 10px;
+			}
+			h4{
+				font-size:16px;
+			}
+		}
 	}
 	
 }
