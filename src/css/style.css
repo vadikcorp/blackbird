@@ -188,14 +188,17 @@ body {
       display: block; }
   #price .row {
     padding: 0px 50px 100px 50px; }
+    #price .row .col-md-8 {
+      margin: 0 auto; }
     #price .row .box {
+      width: 100%;
       padding: 0px;
-      box-shadow: 1px 1px 15px #ddd;
       margin: 5% 0px;
-      transition: all .5s ease-in-out; }
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);
+      transition: all 0.2s ease-in-out; }
       #price .row .box:hover {
         cursor: pointer;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9); }
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9); }
       #price .row .box .inner-box {
         padding: 0px 20px; }
       #price .row .box .ico {
@@ -212,6 +215,7 @@ body {
         width: 150px;
         background-color: #e3e3e3; }
       #price .row .box h3 {
+        padding: 0px 20px;
         margin-top: 40px;
         font-size: 200%;
         text-transform: uppercase; }
@@ -326,18 +330,42 @@ body {
   #portfolio .box {
     height: 300px; } }
 
-@media screen and (max-width: 753px) {
+@media screen and (max-width: 1090px) {
+  #price .box-2 .buttons a {
+    font-size: 65%;
+    padding: 0px; } }
+
+@media screen and (max-width: 767px) {
   #portfolio .box {
-    height: 400px; } }
+    height: 400px; }
+  #count .box {
+    border-bottom: 3px solid #e3e3e3; }
+    #count .box:last-child {
+      border: 0; } }
 
 @media screen and (max-width: 576px) {
   #maininfo .container p {
     padding: 0px 20px; }
-  #maininfo .container .buttons a {
-    margin-right: 0px; }
-  #ability .box {
-    margin: 0px;
-    padding: 0px; }
+  #maininfo .container .buttons:last-child {
+    margin-left: 5px; }
+  #ability .container {
+    padding: 50px 50px; }
+    #ability .container .col-sm-12 {
+      margin: 0 auto; }
+    #ability .container .box {
+      padding: 30px 15px;
+      text-align: center;
+      margin-right: 0px; }
+      #ability .container .box h3 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 140%; }
+      #ability .container .box .fa {
+        font-size: 60px;
+        margin-bottom: 0px;
+        padding-bottom: 10px; }
+      #ability .container .box p {
+        font-size: 90%; }
   #whatido .info {
     line-height: 1.8em;
     padding: 40px 0px; }
@@ -347,10 +375,6 @@ body {
       margin-top: 20px; }
     #whatido .info p {
       margin-top: 15px; }
-  #count .box {
-    border-bottom: 3px solid #e3e3e3; }
-    #count .box:last-child {
-      border: 0; }
   #portfolio .box {
     height: 300px; }
   #contact .icon .ico-2 {
@@ -374,9 +398,80 @@ body {
     align-items: center; }
     #maininfo .buttons a {
       margin-bottom: 10px; }
-  #price .box-2 .buttons a {
-    font-size: 65%;
-    padding: 0px; }
+  #price .heading {
+    padding: 50px 0px; }
+    #price .heading h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 150%; }
+    #price .heading .line {
+      margin: 0 auto;
+      height: 3px;
+      width: 50px;
+      background-color: #000;
+      display: block; }
+  #price .row {
+    padding: 0px 20px 100px 20px; }
+    #price .row .col-md-8 {
+      margin: 0 auto; }
+    #price .row .box {
+      width: 100%;
+      padding: 0px;
+      box-shadow: 1px 1px 15px #ddd;
+      margin: 5% 0px;
+      transition: all .5s ease-in-out; }
+      #price .row .box:hover {
+        cursor: pointer;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9); }
+      #price .row .box .inner-box {
+        padding: 0px 10px; }
+      #price .row .box .ico {
+        background-color: #e3e3e3; }
+        #price .row .box .ico .fa {
+          padding: 35px 0;
+          font-size: 50px; }
+      #price .row .box .pricing {
+        padding-bottom: 10px; }
+      #price .row .box .line {
+        margin: 0 auto;
+        display: block;
+        height: 2px;
+        width: 100px;
+        background-color: #e3e3e3; }
+      #price .row .box h3 {
+        padding: 0px 20px;
+        margin-top: 20px;
+        font-size: 150%;
+        text-transform: uppercase; }
+      #price .row .box h5 {
+        font-size: 120%;
+        font-style: italic; }
+      #price .row .box ul {
+        list-style-type: none;
+        margin-top: 10px;
+        padding: 0;
+        display: flex;
+        flex-direction: column; }
+        #price .row .box ul li {
+          line-height: 1.8em;
+          font-size: 100%; }
+      #price .row .box .buttons {
+        margin: 0px 0; }
+        #price .row .box .buttons a {
+          padding: 5px 10px;
+          font-size: 80%;
+          text-transform: uppercase;
+          letter-spacing: .1em;
+          margin: 10px 0px 30px 0px; }
+        #price .row .box .buttons .btn-dark {
+          background-color: #000;
+          color: #f4f4f4; }
+          #price .row .box .buttons .btn-dark:hover {
+            background-color: #f4f4f4;
+            border: 1px solid #000;
+            color: #000; }
+    #price .row .box-2 .buttons a {
+      font-size: 60%; }
   #contact .icon {
     display: flex;
     flex-direction: column;
@@ -388,4 +483,14 @@ body {
   #contact .container {
     padding: 30px 0px; }
     #contact .container form .inputs input {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+  #footer {
+    padding: 20px 0px; }
+    #footer .info {
+      width: 200px;
+      margin: 0px auto; }
+      #footer .info .fa {
+        font-size: 40px;
+        margin: 0px 10px 15px 10px; }
+      #footer .info h4 {
+        font-size: 16px; } }
