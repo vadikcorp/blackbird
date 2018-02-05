@@ -405,7 +405,90 @@ body{
 	}
 }
 
+#footer{
+	background-color:#000;
+	color:#eee;
+	text-align:center;
+	padding:50px 0px;
+	.info{
+		width: 300px;
+		margin:0px auto;
+		.fa{
+			font-size:50px;
+			margin:0px 20px 30px 20px;
+		}
+		h4{
+			font-size:20px;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1450px){
+	#portfolio{
+		.box{
+			height: 300px;
+		}
+	}
+}
+
+@media screen and (max-width: 753px){
+	#portfolio{
+		.box{
+			height: 400px;
+		}
+	}
+}
+
+
 @media screen and (max-width: 576px){
+	#maininfo{
+		.container{
+			p{
+				padding:0px 20px;
+			}
+			.buttons{
+				a{
+					margin-right:0px;
+				}
+			}
+		}
+	}
+	#ability{
+		.box{
+			margin:0px;
+			padding:0px;
+		}
+	}
+	#whatido{
+		.info{
+			line-height:1.8em;
+			padding: 40px 0px;
+			h5{
+			margin-top:10px;
+			}
+			h1{
+				margin-top:20px;
+			}
+			p{
+				margin-top:15px;
+			}
+		}
+	}
+	#count{
+		.box{
+			border-bottom:3px solid #e3e3e3;
+			&:last-child{
+				border:0;
+			}
+		}
+	}
+	#portfolio{
+		.box{
+			height:300px;
+		}
+	}
 	#contact{
 		.icon{
 			.ico-2{
@@ -432,32 +515,53 @@ body{
 		}
 	}
 }
+
+
 @media screen and (max-width: 450px){
+	#maininfo{
+		.buttons{
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;			
+			a{
+				margin-bottom:10px;
+			}
+		}
+	}
+	#price{
+		.box-2{
+			.buttons{
+				a{
+					font-size:65%;
+					padding:0px;
+				}
+			}
+		}
+	}
 	#contact{
 		.icon{
 			display:flex;
 			flex-direction:column;
+			margin-top:50px;
 			.ico{
 				margin-bottom:20px;
 			}
 		}
-	}
-}
-
-#footer{
-	background-color:#000;
-	color:#eee;
-	text-align:center;
-	padding:50px 0px;
-	.info{
-		width: 300px;
-		margin:0px auto;
-		.fa{
-			font-size:50px;
-			margin:0px 20px 30px 20px;
+		.heading{
+			padding-top:60px;
 		}
-		h4{
-			font-size:20px;
+		.container{
+			padding:30px 0px;
+			form{
+				.inputs{
+					input{
+						margin-bottom:20px;
+					}
+				}
+			}
 		}
+		
 	}
+	
 }
