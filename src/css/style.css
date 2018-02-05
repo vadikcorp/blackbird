@@ -308,7 +308,51 @@ body {
         background-color: #eee;
         color: #000; }
 
+#footer {
+  background-color: #000;
+  color: #eee;
+  text-align: center;
+  padding: 50px 0px; }
+  #footer .info {
+    width: 300px;
+    margin: 0px auto; }
+    #footer .info .fa {
+      font-size: 50px;
+      margin: 0px 20px 30px 20px; }
+    #footer .info h4 {
+      font-size: 20px; }
+
+@media screen and (max-width: 1450px) {
+  #portfolio .box {
+    height: 300px; } }
+
+@media screen and (max-width: 753px) {
+  #portfolio .box {
+    height: 400px; } }
+
 @media screen and (max-width: 576px) {
+  #maininfo .container p {
+    padding: 0px 20px; }
+  #maininfo .container .buttons a {
+    margin-right: 0px; }
+  #ability .box {
+    margin: 0px;
+    padding: 0px; }
+  #whatido .info {
+    line-height: 1.8em;
+    padding: 40px 0px; }
+    #whatido .info h5 {
+      margin-top: 10px; }
+    #whatido .info h1 {
+      margin-top: 20px; }
+    #whatido .info p {
+      margin-top: 15px; }
+  #count .box {
+    border-bottom: 3px solid #e3e3e3; }
+    #count .box:last-child {
+      border: 0; }
+  #portfolio .box {
+    height: 300px; }
   #contact .icon .ico-2 {
     margin-right: 0px; }
   #contact .container form {
@@ -323,22 +367,25 @@ body {
       margin: 0 auto; } }
 
 @media screen and (max-width: 450px) {
+  #maininfo .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #maininfo .buttons a {
+      margin-bottom: 10px; }
+  #price .box-2 .buttons a {
+    font-size: 65%;
+    padding: 0px; }
   #contact .icon {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 50px; }
     #contact .icon .ico {
+      margin-bottom: 20px; }
+  #contact .heading {
+    padding-top: 60px; }
+  #contact .container {
+    padding: 30px 0px; }
+    #contact .container form .inputs input {
       margin-bottom: 20px; } }
-
-#footer {
-  background-color: #000;
-  color: #eee;
-  text-align: center;
-  padding: 50px 0px; }
-  #footer .info {
-    width: 300px;
-    margin: 0px auto; }
-    #footer .info .fa {
-      font-size: 50px;
-      margin: 0px 20px 30px 20px; }
-    #footer .info h4 {
-      font-size: 20px; }
